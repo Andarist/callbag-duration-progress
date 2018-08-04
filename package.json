@@ -1,0 +1,49 @@
+{
+  "name": "callbag-duration-progress",
+  "version": "0.0.0",
+  "description": "👜 Callbag listenable source which emits value describing time progress (number between 0 an 1) since the subscription (using requestAnimationFrame) - useful for animations.",
+  "main": "dist/callbag-duration-progress.js",
+  "module": "dist/callbag-duration-progress.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "precommit": "lint-staged",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/callbag-duration-progress.git"
+  },
+  "keywords": [
+    "callbag",
+    "callbags"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/callbag-duration-progress/issues"
+  },
+  "homepage": "https://github.com/Andarist/callbag-duration-progress#readme",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/preset-env": "7.0.0-beta.54",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "4.0.0-beta.7"
+  },
+  "dependencies": {
+    "callbag-concat-with": "^1.1.0",
+    "callbag-map": "^1.0.1",
+    "callbag-ms-elapsed": "^1.0.0",
+    "callbag-take-while": "^1.0.0"
+  }
+}
