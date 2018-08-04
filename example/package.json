@@ -1,0 +1,17 @@
+{
+  "name": "callbag-duration-progress-example",
+  "description": "This example demonstrates how durationProgress might be used for animations.",
+  "private": true,
+  "main": "src/index.js",
+  "homepage": "https://codesandbox.io/s/github/Andarist/callbag-duration-progress/tree/master/example",
+  "keywords": [
+    "callbag",
+    "callbags"
+  ],
+  "dependencies": {
+    "callbag-duration-progress": "^1.0.0",
+    "callbag-for-each": "^1.0.1",
+    "callbag-map": "^1.0.1",
+    "callbag-pipe": "^1.1.1"
+  }
+}
