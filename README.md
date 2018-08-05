@@ -2,7 +2,7 @@
 
 Callbag listenable source which emits value describing time progress (number between 0 an 1) since the subscription (using requestAnimationFrame) - useful for animations.
 
-## Example
+## Example ([Codesandbox](https://codesandbox.io/s/github/Andarist/callbag-duration-progress/tree/master/example))
 
 ```js
 import duration from 'callbag-duration-progress'
@@ -25,5 +25,5 @@ const moveBall = (ball, easing) => {
   )
 }
 
-moveBall(document.getElementById('#ball'), easeOut)
+moveBall(document.getElementById('ball'), easeOut)
 ```
