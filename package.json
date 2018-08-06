@@ -43,7 +43,7 @@
   "dependencies": {
     "callbag-concat-with": "^1.1.0",
     "callbag-map": "^1.0.1",
-    "callbag-ms-elapsed": "^1.0.0",
+    "callbag-ms-elapsed": "^1.0.1",
     "callbag-take-while": "^1.0.0"
   }
 }
