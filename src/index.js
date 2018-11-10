@@ -2,11 +2,13 @@ import concatWith from 'callbag-concat-with'
 import map from 'callbag-map'
 import msElapsed from 'callbag-ms-elapsed'
 import takeWhile from 'callbag-take-while'
+import pipe from 'pipeline.macro'
 
 export default function durationProgress(ms) {
-  return concatWith(1)(
-    takeWhile(progress => progress <= 1)(
-      map(elapsed => elapsed / ms)(msElapsed),
-    ),
+  return pipe(
+    msElapsed,
+    map(elapsed => elapsed / ms),
+    takeWhile(progress => progress <= 1),
+    concatWith(1),
   )
 }
