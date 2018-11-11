@@ -1,6 +1,6 @@
 {
   "name": "callbag-duration-progress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "👜 Callbag listenable source which emits value describing time progress (number between 0 an 1) since the subscription (using requestAnimationFrame) - useful for animations.",
   "main": "./dist/callbag-duration-progress.cjs.js",
   "module": "./dist/callbag-duration-progress.esm.js",
