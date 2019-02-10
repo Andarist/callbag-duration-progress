@@ -4,12 +4,14 @@
   "description": "👜 Callbag listenable source which emits value describing time progress (number between 0 an 1) since the subscription (using requestAnimationFrame) - useful for animations.",
   "main": "./dist/callbag-duration-progress.cjs.js",
   "module": "./dist/callbag-duration-progress.esm.js",
+  "types": "./types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "rollup -c",
+    "build": "rollup -c && tsc",
     "prepare": "npm run build"
   },
   "repository": {
@@ -30,21 +32,24 @@
     "@babel/core": "^7.1.5",
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
     "@babel/preset-env": "^7.1.5",
+    "@babel/preset-typescript": "^7.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-macros": "^2.4.2",
     "husky": "^1.1.3",
     "jest": "^23.6.0",
     "lint-staged": "^8.0.4",
-    "pipeline.macro": "^1.0.0",
+    "pipeline.macro": "^1.1.0",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.67.0",
-    "rollup-plugin-babel": "^4.0.3"
+    "rollup-plugin-babel": "^4.0.3",
+    "typescript": "^3.3.3"
   },
   "dependencies": {
-    "callbag-concat-with": "^1.1.0",
-    "callbag-map": "^1.0.1",
-    "callbag-ms-elapsed": "^1.1.1",
-    "callbag-take-while": "^1.0.0"
+    "callbag": "^1.2.0",
+    "callbag-concat-with": "^1.2.0",
+    "callbag-map": "^1.1.0",
+    "callbag-ms-elapsed": "^2.0.1",
+    "callbag-take-while": "^2.0.0"
   }
 }
